@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<title>Ayush Aggarwal - Web Page</title> 
+	<meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />	    
+	<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+	<meta property="og:title" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	
+	<link rel="prefetch" href="images/zoom.png">
+	
+	 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+      window.onload = function() {
+          initialize();
+      } 
+   
+      function initialize() {
+      // FIND YOUR LATITUDE & LONGITUDE  -> http://itouchmap.com/latlong.html
+          var myLatlng = new google.maps.LatLng(26.508526,80.229822);
+          var myOptions = {
+              zoom: 15,
+              center: myLatlng,
+         //     mapTypeId: google.maps.MapTypeId.ROADMAP ,
+styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
+               
+
+			  };
+           
+          var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+           
+          var contentString = "";
+           
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+           
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: "Zero Theme"
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+          });
+      }
+  </script>
+		
+</head>
+
+<body>
+	<div class="navbar navbar-fixed-top" data-activeslide="1">
+		<div class="container">
+		
+			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav row">
+					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">Blog</span></a></li>
+					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
+					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">Experience</span></a></li>
+					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">Map's Magic</span></a></li>
+					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">ABOUT ME</span></a></li>
+				</ul>
+				<div class="row">
+					<div class="col-sm-2 active-menu"></div>
+				</div>
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</div><!-- /.navbar -->
+	
+	
+	<!-- === Arrows === -->
+	<div id="arrows">
+		<div id="arrow-up" class="disabled"></div>
+		<div id="arrow-down"></div>
+		<div id="arrow-left" class="disabled visible-lg"></div>
+		<div id="arrow-right" class="disabled visible-lg"></div>
+	</div><!-- /.arrows -->
+	
+	
+	<!-- === MAIN Background === -->
+	<div class="slide story" id="slide-1" data-slide="1">
+		<div class="container">
+			<div id="home-row-1" class="row clearfix">
+				<div class="col-12">
+					<h1 class="font-semibold">Ayush Aggarwal <span class="font-thin"></span></h1>
+					<h4 class="font-semibold">Passion For The Map - <span class="font-thin"> Exploring the World</span> </h4>
+					<br>
+					<br>
+				</div><!-- /col-12 -->
+			</div><!-- /row -->
+			<div id="home-row-2" class="row clearfix">
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>PROFESSIONAL</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="6"><img src="images/s01.png"></div><span>FRIENDLY</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>Super Activities</span></div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide1 -->
+	
+	<!-- === Slide 2 === -->
+	<div class="slide story" id="slide-2" data-slide="2">
+		<div class="container">
+
+			<div class="row subtitle-row">
+				<div class="col-12 font-thin">This is what <span class="font-semibold">blog is about</span></div>
+			</div><!-- /row -->
+			
+			
+			
+			<div class="row content-row">
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-eye-open"></i></p>
+					<h2 class="font-thin">  <span class="font-semibold">Geo Informatics</span></h2>
+					<h4 class="font-thin">Exploring world through tech.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-laptop"></i></p>
+					<h2 class="font-thin"> <span class="font-semibold"> Web Design</span></h2>
+					<h4 class="font-thin">I make some sweet designs and spicy too .</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-tablet"></i></p>
+					<h2 class="font-thin"> <span class="font-semibold">Gamification</span></h2>
+					<h4 class="font-thin">Real power of human is gaming may be social or virtual and we have to use it fully to have good future.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-pencil"></i></p>
+					<h2 class="font-semibold">General</h2>
+					<h4 class="font-thin">My views about what is happening in the world.</h4>
+					
+				</div><!-- /col12 -->
+
+				<div class="row title-row">
+				<div class="col-12 font-thin"><div id="bloglink">Here</div></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->				
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide2 -->
+	
+	<!-- === SLide 3 - Portfolio -->
+	<div class="slide story" id="slide-3" data-slide="3">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p01-large.jpg"><img class="thumb" src="sub/experience/images/p01-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p02-large.jpg"><img class="thumb" src="sub/experience/images/p02-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p09-large.jpg"><img class="thumb" src="sub/experience/images/p09-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p10-large.jpg"><img class="thumb" src="sub/experience/images/p10-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p05-large.jpg"><img class="thumb" src="sub/experience/images/p05-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p06-large.jpg"><img class="thumb" src="sub/experience/images/p06-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p07-large.jpg"><img class="thumb" src="sub/experience/images/p07-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p08-large.png"><img class="thumb" src="sub/experience/images/p08-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p03-large.jpg"><img class="thumb" src="sub/experience/images/p03-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p04-large.jpg"><img class="thumb" src="sub/experience/images/p04-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p11-large.jpg"><img class="thumb" src="sub/experience/images/p11-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p12-large.jpg"><img class="thumb" src="sub/experience/images/p12-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p13-large.jpg"><img class="thumb" src="sub/experience/images/p13-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p14-large.jpg"><img class="thumb" src="sub/experience/images/p14-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p15-large.jpg"><img class="thumb" src="sub/experience/images/p15-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p16-large.jpg"><img class="thumb" src="sub/experience/images/p16-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p17-large.jpg"><img class="thumb" src="sub/experience/images/p17-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p18-large.png"><img class="thumb" src="sub/experience/images/p18-small.png" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p19-large.jpg"><img class="thumb" src="sub/experience/images/p19-small.jpg" alt=""></a></div>				
+		
+		
+		
+		
+		</div><!-- /row -->
+	</div><!-- /slide3 -->
+	
+	<!-- === Slide 4 - Process === -->
+	<div class="slide story" id="slide-4" data-slide="4">
+		<div class="container">
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light">I am lucky to have experiences in many field.</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+
+
+			<div class="row content-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><i class="icon icon-desktop"></i></p>
+					<h2 class="font-thin">At Transerve</h2>
+					<h4 class="font-thin">GIS technology Intern - open source web development of map app</h4>
+					<a href="sub/experience/index1.html"><h4 class="font-thin">Click here -></h4></a>					
+				</div><!-- /col12 -->	
+
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><i class="icon icon-th"></i></p>
+					<h2 class="font-thin"><br>At Oravel</h2>
+					<h4 class="font-thin">Graphic and Web Designer Intern - Conducted an analysis of most effective website design for holiday rentals.</h4>
+					<h4 class="font-thin"><a  href="sub/experience/index2.htmlr">Click here -></a></h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><i class="icon icon-book "></i></p>
+					<h2 class="font-thin"><br>At IITK</h2>
+					<h4 class="font-thin">Many GIS projects, Department camps, Dance, Management, Conduction of various competition and many more.</h4>
+					<h4 class="font-thin"><a  href="sub/experience/index3.html">Click here -></a></h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><i class="icon-asterisk"></i></p>
+					<h2 class="font-thin"><br>At School</h2>
+					<h4 class="font-thin">Presented two games in Visual Studio with many other activities.</h4>
+					<h4 class="font-thin"><a  href="sub/experience/index4.html">Click here -></a></h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><i class="icon icon-bolt"></i></p>
+					<h2 class="font-thin"><br>On My Own</h2>
+					<h4 class="font-thin">Did various online courses and took part in comptition outside campus.</h4>
+					<h4 class="font-thin"><a  href="sub/experience/index5.html">Click here -></a></h4>
+				</div><!-- /col12 -->
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide4 -->
+	
+	<!-- === Slide 5 === -->
+	<div class="slide story" id="slide-5" data-slide="5">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin"><span class="font-semibold">You can see the power of map .</span> </div>
+								<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light"> From various sources and me.</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 font-thin">
+					<p><div id="maplink">Click here.</div></p>	
+				</div><!-- /col12 -->	
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide5 -->
+	
+	<!-- === Slide 6 / Contact === -->
+	<div class="slide story" id="slide-6" data-slide="6">
+		<div class="container">
+			<div id ="aboutid">
+				<div class="col-12 font-light">Map Lover :) Web Designer :) Smart :P Fun :D
+<br>
+<br>
+Dreamer :) natural :) Lover :-* .....
+<br>
+<br>
+
+I am just an ordinary person from the 7.603 billion of this world . Mostly I asked myself why I chose a career in mapping and then I realise i am here looking for new challenges and opportunities to deliver innovative mapping solutions for it.
+<br>
+<br>
+I am a 4th year IIT Kanpur Civil student and has interests in GIS and Map based things. I am self-motivated individual with academic and work experience in Geographic Information Systems. I have extensive knowledge in handling geospatial data by open source web development. I has a wide technical skill set including Image processing, Web design, Photoshop, Coreldraw and my favourite Gamification.Through work experience in Transerve technology I have gained understanding of local government and how much GIS plays a role.
+<br>
+<br>
+I want to help people to understand the world through Geospatial Solutions by integrating my knowledge for the same.</div>
+			</div>
+			
+			
+
+			<div id="contact-row-4" class="row">
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light">You can find me literally anywhere, just push a button and I am there</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a><i class="icon icon-phone"></i></a></p>
+					<span class="hover-text font-light ">91-9005908019</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a ><i class="icon icon-envelope"></i></a></p>
+					<span class="hover-text font-light ">ayushaggar@gmail.com</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="https://www.linkedin.com/in/ayushaggar"><i class="icon-linkedin"></i></a></p>
+					<span class="hover-text font-light ">ayushaggar</span></a>
+				</div>
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="https://www.facebook.com/Ayushaggar"><i class="icon icon-facebook"></i></a></p>
+					<span class="hover-text font-light ">facebook/ayushaggar</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="https://twitter.com/ayush_shag"><i class="icon icon-twitter"></i></a></p>
+					<span class="hover-text font-light ">@ayush_shag</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="https://www.youtube.com/user/ayushaggar"><i class="icon icon-youtube"></i></a></p>
+					<span class="hover-text font-light ">ayushaggar</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="http://www.pinterest.com/ayushaggar/"><i class="icon icon-pinterest"></i></a></p>
+					<span class="hover-text font-light ">ayushaggar</span></a>
+				</div><!-- /col12 -->	
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="http://www.google.com/+AyushAggarwal91"><i class="icon  icon-google-plus"></i></a></p>
+					<span class="hover-text font-light ">ayushaggar</span></a>
+				</div><!-- /col12 -->	
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="http://instagram.com/ayushaggar"><i class="icon  icon-instagram"></i></a></p>
+					<span class="hover-text font-light ">ayushaggar</span></a>
+				</div><!-- /col12 -->		
+				
+				<div id="map_canvas" style="width:1100px ;height:300px;"></div>				
+
+
+				
+			</div><!-- /row -->
+	
+			
+		</div><!-- /container -->
+		
+	</div><!-- /Slide 6 -->
+	
+</body>
+
+	<!-- SCRIPTS -->
+	<script src="js/html5shiv.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+	<script src="js/script.js"></script>
+	
+	<!-- fancybox init -->
+	<script>
+	$(document).ready(function(e) {
+		var lis = $('.nav > li');
+		menu_focus( lis[0], 1 );
+		
+		$(".fancybox").fancybox({
+			padding: 10,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+	
+	});
+
+	      $('#bloglink').click(function (evt) {
+window.open("http://ayushaggar.wordpress.com/");
+});
+	      	      $('#maplink').click(function (evt) {
+alert("Coming Soon!!");
+});
+
+	</script>
+
+
+</html>
