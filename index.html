@@ -67,24 +67,6 @@ styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_light
   ga('send', 'pageview');
 
 </script>
-<script>
-var audio = document.getElementById('background_audio');
-
-document.getElementById('mute').addEventListener('click', function (e)
-{
-    e = e || window.event;
-    audio.muted = !audio.muted;
-    e.preventDefault();
-    if (document.getElementById("mute").innerHTML== "Mute Audio")
-    {
-        document.getElementById("mute").innerHTML= "Play Audio";
-    }
-    else
-    {
-        document.getElementById("mute").innerHTML= "Mute Audio";
-    }
-}, false);
-</script>
 </head>
 
 <body>
@@ -95,7 +77,7 @@ document.getElementById('mute').addEventListener('click', function (e)
 
 </div>
 
-	<div class="navbar navbar-fixed-top" data-activeslide="1">
+	<div class="navbar navbar-fixed-top">
 		<div class="container">
 		
 			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -114,11 +96,11 @@ document.getElementById('mute').addEventListener('click', function (e)
 					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">Experience</span></a></li>
 					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">Map's Magic</span></a></li>
 					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">ABOUT ME</span></a>
-					<span class="fa fa-file-audio-o"></span><a href="#noscroll" id="mute">Mute Audio</a></li>
+					</li>
 				
 				</ul>
 				<div class="row">
-					<div class="col-sm-2 active-menu"></div>
+					<div class="col-sm-2 active-menu"><span class="fa fa-file-audio-o"></span><a href="#noscroll" id="mute">Mute Audio</a></div>
 				</div>
 			</div><!-- /.nav-collapse -->
 		</div><!-- /.container -->
@@ -199,11 +181,11 @@ document.getElementById('mute').addEventListener('click', function (e)
 	<!-- === SLide 3 - Portfolio -->
 	<div class="slide story" id="slide-3" data-slide="3">
 		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p01-large.jpg"><img class="thumb" src="sub/experience/images/p01-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p01-large.jpg"><img class="thumb" src="http://i1295.photobucket.com/albums/b633/ayushaggar/p01-small_zpsmf8mrtim.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p02-large.jpg"><img class="thumb" src="sub/experience/images/p02-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p09-large.jpg"><img class="thumb" src="sub/experience/images/p09-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p09-large.jpg"><img class="thumb" src="http://i1295.photobucket.com/albums/b633/ayushaggar/p09-small_zpskq3ufc56.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p10-large.jpg"><img class="thumb" src="sub/experience/images/p10-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p05-large.jpg"><img class="thumb" src="sub/experience/images/p05-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p05-large.jpg"><img class="thumb" src="http://i1295.photobucket.com/albums/b633/ayushaggar/p05-small_zpsffqeom84.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p06-large.jpg"><img class="thumb" src="sub/experience/images/p06-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p07-large.jpg"><img class="thumb" src="sub/experience/images/p07-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p08-large.png"><img class="thumb" src="sub/experience/images/p08-small.jpg" alt=""></a></div>
