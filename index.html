@@ -113,8 +113,8 @@ document.getElementById('mute').addEventListener('click', function (e)
 					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
 					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">Experience</span></a></li>
 					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">Map's Magic</span></a></li>
-					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">ABOUT ME</span></a></li>
-					<li data-slide="7" class="col-12 col-sm-2"><span class="icon icon-envelope"></span> <span class="text"><a href="#noscroll" id="mute">Mute Audio</a></span></li>
+					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">ABOUT ME</span></a>
+					<span class="icon icon-envelope"></span> <span class="text"><a href="#noscroll" id="mute">Mute Audio</a></span></li>
 				
 				</ul>
 				<div class="row">
@@ -366,6 +366,24 @@ I want to help people to understand the world through Geospatial Solutions by in
 			</div><!-- /row -->
 	<script src="//static.getclicky.com/js" type="text/javascript"></script>
 <script type="text/javascript">try{ clicky.init(100838113); }catch(e){}</script>
+<script>
+var audio = document.getElementById('background_audio');
+
+document.getElementById('mute').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+    if (document.getElementById("mute").innerHTML== "Mute Audio")
+    {
+        document.getElementById("mute").innerHTML= "Play Audio";
+    }
+    else
+    {
+        document.getElementById("mute").innerHTML= "Mute Audio";
+    }
+}, false);
+</script>
 			
 		</div><!-- /container -->
 			
@@ -409,6 +427,25 @@ alert("Coming Soon!!");
 });
 
 	</script>
+	
+	<script>
+var audio = document.getElementById('background_audio');
+
+document.getElementById('mute').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+    if (document.getElementById("mute").innerHTML== "Mute Audio")
+    {
+        document.getElementById("mute").innerHTML= "Play Audio";
+    }
+    else
+    {
+        document.getElementById("mute").innerHTML= "Mute Audio";
+    }
+}, false);
+</script>
 
 
 </html>
