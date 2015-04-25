@@ -67,13 +67,33 @@ styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_light
   ga('send', 'pageview');
 
 </script>
-		
+<script>
+var audio = document.getElementById('background_audio');
+
+document.getElementById('mute').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+    if (document.getElementById("mute").innerHTML== "Mute Audio")
+    {
+        document.getElementById("mute").innerHTML= "Play Audio";
+    }
+    else
+    {
+        document.getElementById("mute").innerHTML= "Mute Audio";
+    }
+}, false);
+</script>
 </head>
 
 <body>
-<div><div align="left" style="width: 100%; overflow-y: hidden;" ><audio src="http://dddproduktionen.weebly.com/files/theme/DDDmusic.mp3" autoplay loop audio.controls=true>
-<p>Your browser does not support the audio element </p>
-</audio></div>
+<div><div align="left" style="width: 100%; overflow-y: hidden;" >
+<audio id="background_audio" autoplay="autoplay" loop>
+  <source src="http://dddproduktionen.weebly.com/files/theme/DDDmusic.mp3" />
+</audio> 
+
+</div>
 
 	<div class="navbar navbar-fixed-top" data-activeslide="1">
 		<div class="container">
@@ -94,6 +114,8 @@ styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_light
 					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">Experience</span></a></li>
 					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">Map's Magic</span></a></li>
 					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">ABOUT ME</span></a></li>
+					<li data-slide="7" class="col-12 col-sm-2"><a id="menu-link-7" href="" title="Next Section"><span class="icon icon-envelope"></span> <span class="text"><a href="#noscroll" id="mute">Mute Audio</a></span></a></li>
+				
 				</ul>
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
