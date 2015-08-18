@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
-<html lang='en'> 
-<head> 
-    <meta charset='utf-8' /> 
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
 	<link href="map.css" rel="stylesheet"  type="text/css">
-		<link rel="icon" type="image/jpg" type="image/vnd.microsoft.icon" href="http://i1295.photobucket.com/albums/b633/ayushaggar/10450939_668854289869869_888017367220203284_n_zps2egvdja9.jpg" />
+		<link rel="icon" type="image/jpg" type="image/vnd.microsoft.icon" href="10450939_668854289869869_888017367220203284_n_zps2egvdja9.jpg" />
 
     <script type='text/javascript' src='OpenLayers.js'></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -57,11 +57,11 @@
 	var cluster;
 	var which = 0;
     function init() {
-	
-		
+
+
         //specify proxyhost
         //OpenLayers.ProxyHost = '/cgi-bin/proxy.cgi?url=';
-        
+
         //Create a map with an empty array of controls
         map = new OpenLayers.Map('map_element');
 
@@ -71,11 +71,11 @@
             {}
         );
         map.addLayer(google_map);
-		
+
 		center = new OpenLayers.LonLat(3.837041, 15.495119);
 		center.transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject());
 		map.setCenter(center,2);
-        
+
 
         //Add vector layer
         vector_layer = new OpenLayers.Layer.Vector('Flickr Data',
@@ -116,7 +116,7 @@
                     }
                 }
         });
-        
+
         var vector_style_select = new OpenLayers.Style({
             'fillColor': '#cdcdcd',
             'fillOpacity': .9,
@@ -124,7 +124,7 @@
             'strokeColor': '#ffffff'
         })
 
-        //Create a style map object and set the 'default' intent to the 
+        //Create a style map object and set the 'default' intent to the
         var vector_style_map = new OpenLayers.StyleMap({
             'default': vector_style,
             'select': vector_style_select
@@ -141,7 +141,7 @@
         )
         map.addControl(select_feature_control);
         select_feature_control.activate();
-    
+
         //Functions to call for the select feature control
         function on_select_feature(event){
             //Store a reference to the element
@@ -155,21 +155,21 @@
             //Store the clusters
              cluster = event.feature.cluster;
              which =  0 ;
-		document.getElementById("contentbd").innerHTML = cluster[which].attributes.name ;				
-	   document.getElementById("contentbd1").innerHTML = cluster[which].attributes.Snippet;			
+		document.getElementById("contentbd").innerHTML = cluster[which].attributes.name ;
+	   document.getElementById("contentbd1").innerHTML = cluster[which].attributes.Snippet;
 	   document.getElementById("image").src = cluster[which].style.externalGraphic;
 	   $("#hide").show(function(){});
             //Loop through the cluster features
 
         }
-        
-        //on unselect function  
+
+        //on unselect function
         function on_unselect_feature(event){
             //Store a reference to the element
              var info_div1 = document.getElementById('contentbd');
 			var info_div2 = document.getElementById('contentbd1');
 			var info_div3 = document.getElementById('image');
-            
+
             //Clear out the div
             info_div1.innerHTML = '';
             info_div2.innerHTML = '';
@@ -177,11 +177,11 @@
         }
         vector_layer.events.register('featureselected', this, on_select_feature);
         vector_layer.events.register('featureunselected', this, on_unselect_feature);
-        
+
         if(!map.getCenter()){
             map.zoomToMaxExtent();
         }
-        
+
         //-------------------------------
         //HTML Related
         //-------------------------------
@@ -190,36 +190,36 @@
         function update_vector_layer(){
             //Change URL based on input tags
             vector_layer.protocol.options.params['tags'] = document.getElementById('input_tags').value
-            
+
             //Refresh the layer with the new params
             vector_layer.refresh();
-            
+
             //Lastly, clear out the div that shows photo info
              var info_div1 = document.getElementById('contentbd');
 			var info_div2 = document.getElementById('contentbd1');
 			var info_div3 = document.getElementById('image');
-            
+
             //Clear out the div
             info_div1.innerHTML = '';
             info_div2.innerHTML = '';
 			info_div3.src = '';
         }
-        
+
         //Add events to HTML input element
         document.getElementById('input_submit').addEventListener(
             'click',
-            update_vector_layer, 
+            update_vector_layer,
             false);
 
     }
-	
+
 	 function backward(){
      if (which>0){
       which=which-1;
       }
-	  
-	   document.getElementById("contentbd").innerHTML = cluster[which].attributes.name ;				
-	   document.getElementById("contentbd1").innerHTML = cluster[which].attributes.Snippet;			
+
+	   document.getElementById("contentbd").innerHTML = cluster[which].attributes.name ;
+	   document.getElementById("contentbd1").innerHTML = cluster[which].attributes.Snippet;
 	   document.getElementById("image").src = cluster[which].style.externalGraphic;
      }
 
@@ -228,20 +228,20 @@
      {
      which=which+1;
      }
-	   document.getElementById("contentbd").innerHTML = cluster[which].attributes.name ;				
-	   document.getElementById("contentbd1").innerHTML = cluster[which].attributes.Snippet;			
+	   document.getElementById("contentbd").innerHTML = cluster[which].attributes.name ;
+	   document.getElementById("contentbd1").innerHTML = cluster[which].attributes.Snippet;
 	   document.getElementById("image").src = cluster[which].style.externalGraphic;
     }
-	
+
 	$(document).ready(function(){
-	
+
 	$('#hide').fadeOut("slow");
 	 });
-	
+
 
     </script>
     <script src="//load.sumome.com/" data-sumo-site-id="b9ca3f1147fcdabe0965bb81bb34f34daaed845a7356722941fa2d7ad5278770" async="async"></script>
-    
+
 </head>
 
 <body onload='init();'>
@@ -255,20 +255,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TQDZHJ');</script>
 <!-- End Google Tag Manager -->
     <div id='map_element'></div>
-    
+
 	 <div align="center"  id="head">
 	<b>Lets see what and where world is posting on social networking site on real time data !!</b>
 	</div>
-	
-        <input type='text' id='input_tags' value='google' />     
-        <input type='button' id='input_submit' value='Show Data' />
-    
 
-	
+        <input type='text' id='input_tags' value='google' />
+        <input type='button' id='input_submit' value='Show Data' />
+
+
+
 	<div id="hide">
 	<div id="contentbd" align="center" >
-	<b></b>	
-		
+	<b></b>
+
 		</div>
 
 <div id="contentbd1" align="center">
@@ -285,9 +285,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<label onclick="backward()" class="prev">&#x2039;</label>
 			<label onclick="forward()"  class="next">&#x203a;</label>
 		</div>
-    </li>   
+    </li>
 </ul>
 	</div>
-	
+
 </body>
 </html>

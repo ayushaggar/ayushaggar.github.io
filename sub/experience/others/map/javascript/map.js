@@ -12,30 +12,30 @@ var map, _maps = [], _popup = [], _mapInfo = [], urlObject, _csvLayers = [], _st
 
 function initMap() {
       patchID();
-      
+
       if(configOptions.geometryserviceurl && location.protocol === "https:"){
         configOptions.geometryserviceurl = configOptions.geometryserviceurl.replace('http:','https:');
       }
-      esri.config.defaults.geometryService = new esri.tasks.GeometryService(configOptions.geometryserviceurl);  
-      
+      esri.config.defaults.geometryService = new esri.tasks.GeometryService(configOptions.geometryserviceurl);
+
 
 
       if(!configOptions.sharingurl){
         configOptions.sharingurl = location.protocol + '//' + location.host + "/sharing/content/items";
       }
       esri.arcgis.utils.arcgisUrl = configOptions.sharingurl;
-       
-      if(!configOptions.proxyurl){   
+
+      if(!configOptions.proxyurl){
         configOptions.proxyurl = location.protocol + '//' + location.host + "/sharing/proxy";
       }
 
       esri.config.defaults.io.proxyUrl =  configOptions.proxyurl;
 
       esri.config.defaults.io.alwaysUseProxy = false;
-      
+
       urlObject = esri.urlToObject(document.location.href);
       urlObject.query = urlObject.query || {};
-      
+
       if(urlObject.query.title){
         configOptions.title = urlObject.query.title;
       }
@@ -43,36 +43,36 @@ function initMap() {
         configOptions.title = urlObject.query.subtitle;
       }
       if(urlObject.query.webmap){
-        configOptions.webmap = urlObject.query.webmap;      
-      } 
-      if(urlObject.query.bingMapsKey){
-        configOptions.bingmapskey = urlObject.query.bingMapsKey;      
+        configOptions.webmap = urlObject.query.webmap;
       }
-	  
-      
+      if(urlObject.query.bingMapsKey){
+        configOptions.bingmapskey = urlObject.query.bingMapsKey;
+      }
+
+
      if (configOptions.webmaps.length === 1){
          $("#tabs").hide();
      }
-     
+
    	 createMaps();
 }
 
 
 function createMaps(){
-		
+
 	dojo.forEach(configOptions.webmaps,function(webmap,i){
-		
+
 	  $("#map").append("<div id='mapDiv"+i+"' class='mapDiv'></div>");
 	  $("#storyPoints").append("<div id='story"+i+"' class='story'></div>");
 	  $("#tabs").append("<div id='tab"+i+"' class='tab'></div>");
 	  $("#legendDiv").append("<div id='legendDiv"+i+"' class='legendDiv'></div>");
-	  
+
 	  $("#tab"+i).data("count", i);
-	  
+
 	  var popup = new esri.dijit.Popup({
 		highlight:true
       }, dojo.create("div"));
-	  
+
 	  _popup[i] = popup;
 
       var mapDeferred = esri.arcgis.utils.createMap(webmap.id, "mapDiv"+i, {
@@ -87,21 +87,21 @@ function createMaps(){
       });
 
       mapDeferred.addCallback(function (response) {
-		  
+
         mapInfo = {"title": response.itemInfo.item.title || "",
 				   "subtitle": response.itemInfo.item.snippet || "",
 				   "description": response.itemInfo.item.description || ""};
-        
+
 		$("#tab"+i).html(mapInfo.title);
-		
+
         map = response.map;
 		_maps[i] = map;
 		_mapInfo[i] = mapInfo;
-		
+
 		dojo.connect(map,"onUpdateEnd",hideLoader);
-		  
+
         var layers = response.itemInfo.itemData.operationalLayers;
-		
+
         if(map.loaded){
           initUI(response, i);
 		  findLayers(layers,i);
@@ -126,7 +126,7 @@ function createMaps(){
     function initUI(response, i) {
       //add chrome theme for popup
       dojo.addClass(map.infoWindow.domNode, "chrome");
-      //add the scalebar 
+      //add the scalebar
       var scalebar = new esri.dijit.Scalebar({
         map: map,
         scalebarUnit:"english" //metric or english
@@ -141,7 +141,7 @@ function createMaps(){
       });
 
       var layerInfo = esri.arcgis.utils.getLegendLayers(response);
-      
+
       if(layerInfo.length > 0){
         var legendDijit = new esri.dijit.Legend({
           map:map,
@@ -153,7 +153,7 @@ function createMaps(){
         $("#legendDiv").hide();
       }
 	}
-	
+
 	function buildLayersList(layers){
       //build a list of layers for the legend.
       var layerInfos = [];
@@ -167,12 +167,12 @@ function createMaps(){
 				else{
 				  dojo.forEach(mapLayer.featureCollection.layers, function(layer) {
 					 layerInfos.push({
-						layer: layer.layerObject, 
+						layer: layer.layerObject,
 						title: layer.layerDefinition.name
 					  });
-				  }); 
+				  });
 				}
-				
+
 			  }
 			 }else if (mapLayer.layerObject){
 				layerInfos.push({layer:mapLayer.layerObject, title:mapLayer.title});
@@ -181,7 +181,7 @@ function createMaps(){
       });
 			return layerInfos;
 }
-	
+
 function hideLoader(){
 	if (mapsLoaded <= configOptions.webmaps.length){
 		if (mapsLoaded == configOptions.webmaps.length - 1){
@@ -212,9 +212,9 @@ function hideLoader(){
 function patchID() {  //patch id manager for use in apps.arcgis.com
        esri.id._isIdProvider = function(server, resource) {
        // server and resource are assumed one of portal domains
- 
+
        var i = -1, j = -1;
- 
+
        dojo.forEach(this._gwDomains, function(domain, idx) {
          if (i === -1 && domain.regex.test(server)) {
            i = idx;
@@ -223,9 +223,9 @@ function patchID() {  //patch id manager for use in apps.arcgis.com
            j = idx;
          }
        });
- 
+
        var retVal = false;
-   
+
        if (i > -1 && j > -1) {
          if (i === 0 || i === 4) {
            if (j === 0 || j === 4) {
@@ -248,7 +248,7 @@ function patchID() {  //patch id manager for use in apps.arcgis.com
            }
          }
        }
- 
+
        return retVal;
-     };    
+     };
     }
