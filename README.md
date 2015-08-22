@@ -1,3 +1,3 @@
 # ayushaggar.github.io
 
-http://www.ayushaggarwal.in/
+This is to analyse Geospatial predictive modeling technique in map. Currently in progress not complete.
