@@ -47,7 +47,30 @@
         a.appendChild(r);
     })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
+<!-- Start of Async Drift Code -->
+<script>
+!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('ns26nneivi6n');
+</script>
+<!-- End of Async Drift Code -->
 </head>
 
 <body>
@@ -66,27 +89,30 @@
                     <a href="http://www.ayushaggarwal.in"><span class="glyphicon glyphicon-chevron-left"></span>Home Page </a>
                     </li>
                     <li>
-                        <a href="index7.html">Practo</a>
+                        <a href="skymap_global.html">Skymap Global</a>
                     </li>
                     <li>
-                        <a href="index3.html">IIT Kanpur</a>
+                        <a href="practo.html">Practo</a>
                     </li>
                     <li>
-                        <a href="index6.html">Leibniz University of Hanover</a>
+                        <a href="iit_kanpur.html">IIT Kanpur</a>
                     </li>
                     <li>
-                        <a href="index1.html">Transerve Technologies</a>
+                        <a href="hanover.html">Leibniz University of Hanover</a>
+                    </li>
+                    <li>
+                        <a href="transerve.html">Transerve Technologies</a>
                     </li>
                     <li>
                         <b>
-                            <a href="index2.html">Oravel/OYO Rooms</a>
+                            <a href="oyo_rooms.html">Oravel/OYO Rooms</a>
                         </b>
                     </li>
                     <li>
-                        <a href="index4.html">School</a>
+                        <a href="dps_school.html">School</a>
                     </li>
                     <li>
-                        <a href="index5.html">On My Own</a>
+                        <a href="lifebuzz.html">On My Own</a>
                     </li>
                 </ul>
             </div>
