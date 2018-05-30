@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='http://fonts.UAapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/jpg" type="image/vnd.microsoft.icon" href="icon.jpg" />
 	<link rel="prefetch" href="images/zoom.png">
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3"></script>
@@ -32,27 +31,6 @@
 
 		ga('create', 'UA-53646788-3', 'auto');
 		ga('send', 'pageview');
-
-		!function() {
-		var t;
-		if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-		t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-		t.factory = function(e) {
-			return function() {
-			var n;
-			return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-			};
-		}, t.methods.forEach(function(e) {
-			t[e] = t.factory(e);
-		}), t.load = function(t) {
-			var e, n, o, i;
-			e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-			o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-			n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-		});
-		}();
-		drift.SNIPPET_VERSION = '0.3.1';
-		drift.load('ns26nneivi6n');
 	</script>
 	<link href="css/nivo-lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/default.css" type="text/css" />
@@ -70,9 +48,9 @@
 					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
 					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">BLOG</span></a></li>
 					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
-					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">EXPERIENCE</span></a></li>
+					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">PROJECTS</span></a></li>
 					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">MAP'S MAGIC</span></a></li>
-					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">ABOUT ME</span></a>
+					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a>
 					</li>
 				</ul>
 				<div class="row">
@@ -92,7 +70,140 @@
 	<div class="slide story" id="slide-1" data-slide="1">
 		<div class="container">
 			<div id="home-row-2" class="row clearfix">
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="main-menu" id="main-menu">
+					<ul class="main-menu-list">
+						<li><a href="#page-resume" class="link-home"> Me</a></li>
+						<li><a href="#page-resume" class="link-page">Experience</a></li>
+						<li><a href="#page-skills" class="link-page">Skills</a></li>
+						<li><a href="#page-lifebuzz" class="link-page">Lifebuzz</a></li>
+					</ul>
+				</div>
+				<div class="section-vcardbody section-home" id="section-home">
+					<div class="vcard-profile-pic">
+						<img src="images/profile2.jpg" id="profile2"  alt=""/>
+						<img src="images/profile1.jpg" id="profile1" class="profileActive" alt=""/>
+					</div>
+					<div class="vcard-profile-description">
+						<h5 class="color1"><span class="color1">Passion for Map | Experience Collector | Navigating the future | Living My Bucket List | Writer & Photographer | Travel | Spotify | Coder</span></h1>
+						<h5 class="color3">I have professional experience and understanding in applying new technology and industry frameworks in Geoinformatics related applications on different datasets using open source development. I have wide technical skills set including Machine Learning, Spatial Analytics, Google Map API, Big Data, IOT, Augmented Reality, Google Cloud, Image Processing, Web and Mobile Development, Gamification.</h5>
+						<hr class="hr1">
+						<div class="btn btn-default" id="" style="cursor: pointer">
+							<b>Chat with me</b>
+						</div>
+					</div>	
+				</div>
+				<div class="section-vcardbody section-page" id="page-resume">
+					<div class="section-education">
+						<h2 class="section-title">Experience</h2>
+						<div class="resume-item">
+							<h2 class="section-item-title-1">Working in SkyMap Global - Technology & Research Engineer </h2>
+						</div>
+							<h2 class="section-title2">Education in IIT Kanpur </h2>
+							<h2 class="section-title2">Research in University of Hanover </h2>
+							<h2 class="section-title2">Focused on ML, AI, Geoinformatics </h2>
+							<h2 class="section-title2">Industrial experience in Practo, Transerve, OYO, WhoAmI NGO</h2>
+					</div>			 
+				</div>
+				<div class="section-vcardbody section-page" id="page-skills">
+					<div class="section-skills">
+						<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Technical Skills</h3>
+						<ul class="skills-list">
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Geoinformatics</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Web and mobile development</span>
+							</div>
+							</li>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Machine Learning and AI</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Cloud services and Industry frameworks</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Algorithms, Data Analysis and Visualization</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Gamification</span>
+							</div>
+							</li>
+						</ul>
+
+						<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Professional Skills</h3>
+						<ul class="skills-list">
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Technical Leadership</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Self-motivation</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Communication</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Decision Making</span>
+							</div>
+							</li>
+							<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
+								</div>
+								<span class="progress-type">Time Management</span>
+							</div>
+							</li>
+						</ul>
+					</div>			
+				</div>
+				<div class="section-vcardbody section-page" id="page-lifebuzz">
+					<div class="section-education">
+						<h2 class="section-title">Lifebuzz</h2>
+						<div class="resume-item">
+							<h2 class="section-item-title-1">Bungee Jumping, River Rafting </h2>
+						</div>
+							<h2 class="section-title2">Visited Europe and Singapore </h2>
+							<h2 class="section-title2">Spotify </h2>
+							<h2 class="section-title2">Tv series </h2>
+					</div>			 
+				</div>
 			</div>
 		</div>
 	</div>
@@ -133,7 +244,7 @@
 						<b>Quora Profile</b>
 						</div>						
 					</div>
-					<img src="images/quora.png" width="300px" Height="100px" align="center" alt="">
+					<img src="images/viewed.png" width="300px" Height="100px" align="center" alt="">
 				</div>
 				
 			</div>
@@ -142,23 +253,19 @@
 
 	<div class="slide story" id="slide-3" data-slide="3">
 		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p08-large.png"><img class="thumb" src="sub/experience/images/p08-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p05-large_zpsvmps22ao.JPG"><img class="thumb" src="sub/experience/images/p05-small_zpsffqeom84.JPG" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p17-large.jpg"><img class="thumb" src="sub/experience/images/p17-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p10-large.jpg"><img class="thumb" src="sub/experience/images/p10-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p04-large.jpg"><img class="thumb" src="sub/experience/images/p04-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p16-large.jpg"><img class="thumb" src="sub/experience/images/p16-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p15-large.jpg"><img class="thumb" src="sub/experience/images/p15-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="sub/experience/images/p06-large.jpg"><img class="thumb" src="sub/experience/images/p06-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p08-large.png"><img class="thumb" src="experience/images/p08-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p05-large_zpsvmps22ao.JPG"><img class="thumb" src="experience/images/p05-small_zpsffqeom84.JPG" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p17-large.jpg"><img class="thumb" src="experience/images/p17-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p10-large.jpg"><img class="thumb" src="experience/images/p10-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p04-large.jpg"><img class="thumb" src="experience/images/p04-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p16-large.jpg"><img class="thumb" src="experience/images/p16-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p15-large.jpg"><img class="thumb" src="experience/images/p15-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="experience/images/p06-large.jpg"><img class="thumb" src="experience/images/p06-small.jpg" alt=""></a></div>
 		</div>
 	</div>
 
 	<div class="slide story" id="slide-4" data-slide="4">
 		<div class="container">
-			<div class="row subtitle-row">
-				<div class="col-sm-1 hidden-sm">&nbsp;</div>
-				<div class="col-12 col-sm-10 font-light">I am lucky to have experiences in many Disciplines</div>
-			</div>
 			<div class="row content-row">
 				<div class="col-12 col-sm-2 with-hover-text">
 					<p><i class="icon icon-globe"></i></p>
@@ -227,179 +334,8 @@
 
 	<div class="slide story" id="slide-6" data-slide="6">
 			<div id ="aboutid">
-				My life's journey!
 					<div class="container">
-						<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/79c4b622a2335d1aaf8c7cb6470e1e6b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-						<div class="main-menu" id="main-menu">
-							<ul class="main-menu-list">
-								<li><a href="#page-resume" class="link-home">Me</a></li>
-								<li><a href="#page-resume" class="link-page">Experience</a></li>
-								<li><a href="#page-skills" class="link-page">Skills</a></li>
-								<li><a href="#page-place" class="link-page">Places Visited</a></li>
-								<li><a href="#page-music" class="link-page">Music Insights</a></li>
-								<li><a href="#page-website" class="link-page">Website Traffic</a></li>
-								<li><a href="#page-contact" class="link-page">Contact</a></li>
-							</ul>
-						</div>
-						<div class="section-vcardbody section-home" id="section-home">
-							<div class="vcard-profile-pic">
-								<img src="images/profile2.jpg" id="profile2"  alt=""/>
-								<img src="images/profile1.jpg" id="profile1" class="profileActive" alt=""/>
-							</div>
-							<div class="vcard-profile-description">
-								<h5 class="color1"><span class="color1">Passion for Map | Experience Collector | Navigating the future | Living My Bucket List | Writer & Photographer | Travel | Spotify | Coder</span></h1>
-								<h5 class="color3">I have professional experience and understanding in applying new technology and industry frameworks in Geoinformatics related applications on different datasets using open source development. I have wide technical skills set including Machine Learning, Spatial Analytics, Google Map API, Big Data, IOT, Augmented Reality, Google Cloud, Image Processing, Web and Mobile Development, Gamification.</h5>
-								<hr class="hr1">
-								<div class="vcard-profile-description-feature">
-									<div class="vcard-profile-description-ft-item">
-										<p>Chat with me :)</p>
-									</div>
-								</div>	
-							</div>	
-						</div>
-						<div class="section-vcardbody section-page" id="page-resume">
-							<div class="section-education">
-								<h2 class="section-title">Experience</h2>
-								<div class="resume-item">
-									<h2 class="section-item-title-1">Working in SkyMap Global - Technology & Research Engineer </h2>
-								</div>
-									<h2 class="section-title2">Education in IIT Kanpur </h2>
-									<h2 class="section-title2">Research in University of Hanover </h2>
-									<h2 class="section-title2">Focused on ML, AI, Geoinformatics </h2>
-									<h2 class="section-title2">Industrial experience in Practo, Transerve, OYO, WhoAmI NGO</h2>
-							</div>			 
-						</div>
-						<div class="section-vcardbody section-page" id="page-skills">
-							<div class="section-skills">
-								<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Technical Skills</h3>
-								<ul class="skills-list">
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Geoinformatics</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Web and mobile development</span>
-									</div>
-									</li>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Machine Learning and AI</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Cloud services and Industry frameworks</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Algorithms, Data Analysis and Visualization</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-3" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Gamification</span>
-									</div>
-									</li>
-								</ul>
-
-								<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Professional Skills</h3>
-								<ul class="skills-list">
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Technical Leadership</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Self-motivation</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Communication</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Decision Making</span>
-									</div>
-									</li>
-									<li>
-									<div class="progress">
-										<div class="progress-bar progress-bar-2" data-percent="100%" role="progressbar" style="width: 100%;">
-										</div>
-										<span class="progress-type">Time Management</span>
-									</div>
-									</li>
-								</ul>
-							</div>			
-						</div>
-						<div class="section-vcardbody section-page" id="page-place">
-							<div class="section-portfolio">
-								<h2 class="section-title">Places Visited</h2>
-								<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Around 1500</h3>
-								<iframe height="200" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col5+from+1VPheZZntOVe3ioAm0KmNFKQ46a6W7Gg9FN5fKf6N&amp;viz=MAP&amp;h=false&amp;lat=20.59392451362&amp;lng=65.962750557133441&amp;t=1&amp;z=2&amp;l=col5&amp;y=2&amp;tmplt=3&amp;hml=KML"></iframe>
-								<div class="map">
-									<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Link between city and place</h3>
-									<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=false&amp;sdb=1&amp;rmax=100000&amp;q=select+col1%2C+col4%2C+col3+from+1VPheZZntOVe3ioAm0KmNFKQ46a6W7Gg9FN5fKf6N&amp;qrs=+where+col1+%3E%3D+&amp;qre=+and+col1+%3C%3D+&amp;qe=&amp;uiversion=2&amp;state=%7B%22ps%22%3A%221_1_-l_4_a_-1j_-1s_ai_63_6_5d_5_1i_io_-5c_-x_2s_-56_1t_tg_-5t_-1e_c_-3s_2b_s7_3j_-2l_ts_-5t_-d_4_-a_-o_py_3r_25_ql_2f_-18_30_74_-2k_2q_-10_-2g_4e_7_-b_ao_6x_d_rf_-7x_-1u_ig_i_2a_3r_2e_0_t8_2q_p_1u_-1r_-2o_k_42_-1a_uw_-4g_2o_2m_-2g_-1o_n9_-1g_i_4g_-7z_1t_4f_-7z_x_aq_69_15_2y_-p_18_3h_-64_1x_3o_7a_2e_7c_-2e_-29_5c_13_1u_10_g_4_81_15_6_34_5f_-2q_jt_3_3b_fn_7y_1i_k7_-3x_-k_an_71_-j_z_-29_-2p_iw_-e_2k_2x_17_u_pr_80_27_3s_-1b_12_l_-1u_-4_uc_-1t_f_ij_3_2r_k8_-6i_-2j_14_-3f_w_24_-18_-30_46_-5z_2q_6j_-1n_z_6t_-6c_2g_72_-1p_-34_4d_-1u_-e_47_-6e_1b_4b_1e_-2h_o0_-1y_6_b_-4v_33_n8_18_2a_6_a_-y_q2_82_-1n_e_s_-f_79_d_-1r_mp_20_-1v_22_-1u_1h_3d_-18_1g_3f_7j_-1u_5r_-27_1s_4w_-2u_-2f_4c_-6a_w_1v_-1x_r_in_-6r_-k_jc_m_2w_85_-1j_1h_dg_6s_-15_ix_11_2o_7w_1l_1q_pq_7s_2s_r1_-7x_-2l_4p_-28_-3_13_-h_-31_aw_67_-1h_q8_-6y_-18_re_-7d_-2m_6d_-9_-2s_x_-t_-39_w_-29_-39_41_6s_2t_2u_-6r_1j_2t_-6s_23_3q_1p_-27_nm_-27_i_hx_-34_-26_ab_-34_-1f_2g_-36_-1r_0_q_-w_iu_1z_14_t9_4a_15_1k_-2t_-2t_a7_-2k_-31_pm_-1x_14_45_6a_-2p_8t_7w_-2p_ii_-2p_2l_jd_1y_21_qo_45_-20_87_21_1g_iz_19_-a_nr_1q_2j_ne_-i_3a_jm_-1b_2q_o_16_-l_q_j_-2u_s_-3e_-20_19_8_-2h_je_20_1r_1n_-43_8_21_11_-w_de_7w_o_2l_1_-2u_2v_-6v_11_6r_-6y_2g_3t_s_-17_el_-7v_2k_e0_7x_-a_dk_-7o_8_4h_1a_g_ot_1d_2y_4j_68_2o_4k_5j_2p_a1_-3a_-14_9b_-2l_1b_90_-72_1t_53_-34_-2s_8a_-1i_2g_5s_83_-13_7v_j_-1f_7t_-2h_a_7g_-6r_2u_7d_-3a_-2h_5t_81_-27_n4_-13_2x_q6_5p_-27_qj_-85_0_ih_11_36_m8_-82_-11_jp_-u_34_lh_1k_2r_qk_-7x_-j_ob_1v_2a_t7_4c_1o_6s_-2c_w_9c_2r_4_1i_-5i_32_%22%2C%22cx%22%3A-12.107726416171563%2C%22cy%22%3A-66.72177413485132%2C%22sw%22%3A699.7515068606551%2C%22sh%22%3A323.7855920846626%2C%22z%22%3A2.48708726558721%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=500&amp;height=300"></iframe>
-								</div>
-							</div>			
-						</div>
-						<div class="section-vcardbody section-page" id="page-music">
-							<div class="section-portfolio">
-								<h2 class="section-title">Music Insights</h2>
-								<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Songs Scrobble - 5609</h3>
-								<div class="map">
-									<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Artist Location</h3>
-									<iframe height="200" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col12+from+1ZmANfIWhSUDex4lSVfbSUSLEF4hgyA8lujFhQsE2&amp;viz=MAP&amp;h=false&amp;lat=20.59391598392243&amp;lng=78.962750000011&amp;t=1&amp;z=2&amp;l=col12&amp;y=2&amp;tmplt=2&amp;hml=ONE_COL_LAT_LNG"></iframe>
-								</div>
-							</div>			
-						</div>
-						<div class="section-vcardbody section-page" id="page-website">
-							<div class="section-portfolio">
-								<h2 class="section-title">Website Traffic</h2>
-								<div class="map">
-									<div class="map-overlay"></div>
-									<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Click on Country to see Spreading</h3>
-									<iframe id="oSZeabhAJn" height="250"  style="margin:0px;border-width:0px;overflow:hidden;width:10px;  min-width:100%; *width: 100%;"  scrolling="no" src="https://www.embeddedanalytics.com/reports/displayreport?reportcode=oSZeabhAJn&chckcode=gaNQnNvbsagUTunGsfq8Ck" title="Reporting Tool for Google Analytics and Google Adwords."></iframe>
-								</div>
-							</div>			
-						</div>
-						<div class="section-vcardbody section-page" id="page-contact">
-							<div class="section-contact">
-								<h2 class="section-title">Contact</h2>
-								<div class="map">
-									<div class="map-overlay"></div>
-									<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Current Location</h3>
-									<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+19x-MpihbCLO8M8KqEjKPeaZ7H8wea32Wi9Ld6zij&amp;viz=MAP&amp;h=false&amp;lat=17.413721190095448&amp;lng=78.48025425046982&amp;t=1&amp;z=12&amp;l=col2&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>
-								</div>
-							</div>			
-						</div>
-						<div style="margin-top: 350px;">
+						<div style="margin-top: -150px;">
 							<div id="contact-row-4" class="row">			
 											<div class="col-12 col-sm-2 with-hover-text">
 												<p><a><i class="icon icon-phone"></i></a></p>
@@ -448,6 +384,13 @@
 											<div class="col-12 col-sm-2 with-hover-text">
 												<a target="_blank" href="https://www.snapchat.com/add/ayushaggar"><img src="images/snapchat_ayushaggar.png" width="150px" Height="150px" alt=""></a>
 											</div>
+							</div>
+							<div class="section-contact">
+								<div class="map">
+									<div class="map-overlay"></div>
+									<h3><i class="fa fa-code"></i>&nbsp;&nbsp; Current Location</h3>
+									<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+19x-MpihbCLO8M8KqEjKPeaZ7H8wea32Wi9Ld6zij&amp;viz=MAP&amp;h=false&amp;lat=17.413721190095448&amp;lng=78.48025425046982&amp;t=1&amp;z=12&amp;l=col2&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -516,35 +459,37 @@
 		});
 
 				$('#mapmagiclink').click(function (evt) {
-		window.open("sub/mapmagic/index.html","_self");
+		window.open("mapmagic/index.html","_self");
 		});
 
 				$('#quoralink').click(function (evt) {
 		window.open("https://www.quora.com/profile/Ayush-Aggarwal-2");
 		});
 
+ $('#mepage').click(function (evt) { window.open("me/index.html","_self"); });
+
 				$('#ex1').click(function (evt) {
-		window.open("sub/experience/skymap_global.html","_self");
+		window.open("experience/skymap_global.html","_self");
 		});
 
 				$('#ex2').click(function (evt) {
-		window.open("sub/experience/practo.html","_self");
+		window.open("experience/practo.html","_self");
 		});
 
 				$('#ex3').click(function (evt) {
-		window.open("sub/experience/iit_kanpur.html","_self");
+		window.open("experience/iit_kanpur.html","_self");
 		});
 
 				$('#ex4').click(function (evt) {
-		window.open("sub/experience/hanover.html","_self");
+		window.open("experience/hanover.html","_self");
 		});
 
 				$('#ex5').click(function (evt) {
-		window.open("sub/experience/oyo_rooms.html","_self");
+		window.open("experience/oyo_rooms.html","_self");
 		});
 
 				$('#ex6').click(function (evt) {
-		window.open("sub/experience/lifebuzz.html","_self");
+		window.open("experience/lifebuzz.html","_self");
 		});
 
 	</script>

@@ -48,37 +48,13 @@
         a.appendChild(r);
       })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-    <script>
-      ! function () {
-        var t;
-        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console &&
-          console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-          t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-          t.factory = function (e) {
-            return function () {
-              var n;
-              return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-            };
-          }, t.methods.forEach(function (e) {
-            t[e] = t.factory(e);
-          }), t.load = function (t) {
-            var e, n, o, i;
-            e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
-              "https://js.driftt.com/include/" + i + "/" + t + ".js",
-              n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-          });
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('ns26nneivi6n');
-    </script>
   </head>
   <body>
     
     <aside class="probootstrap-aside js-probootstrap-aside">
       <a href="#" class="probootstrap-close-menu js-probootstrap-close-menu d-md-none"><span class="oi oi-arrow-left"></span> Close</a>
       <div class="probootstrap-site-logo probootstrap-animate" data-animate-effect="fadeInLeft">      
-        <a href="../../index.html" class="mb-2 d-block probootstrap-logo"><span class="oi oi-arrow-left"></span>Home Page</a>
+        <a href="../index.html" class="mb-2 d-block probootstrap-logo"><span class="oi oi-arrow-left"></span>Home Page</a>
         <br>
         <br>
         <p class="mb-0">My Experiences till Now <a href=""> </a></p>
