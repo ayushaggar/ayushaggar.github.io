@@ -879,7 +879,7 @@ iframe {
 		position: absolute;
 		margin-top: 0px;
 		left: 30%;
-		height: 550px;
+		height: 580px;
 		width: 40%;
 		padding: 45px;
 		padding-bottom: 20px;
@@ -1078,7 +1078,7 @@ iframe {
 	height: 200px;
 	overflow: hidden;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	position: relative;
 }
 
