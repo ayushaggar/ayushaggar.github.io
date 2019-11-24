@@ -137,8 +137,16 @@ body {
 	background-color: #e67e22 !important;
 }
 
+#special-active-menu-7 {
+	background-color: #312450 !important;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	#slide-4 .content-row h2 {
+		min-height: 6em;
+	}
+
+	#slide-7 .content-row h2 {
 		min-height: 6em;
 	}
 }
@@ -181,7 +189,10 @@ body {
 	.nav li[data-slide="6"] {
 		background-color: #2f2f2f;
 	}
-
+	.nav li[data-slide="7"] {
+		background-color: #312450;
+	}
+	
 	.nav li[data-slide="2"] {
 		background-color: #1abc9c;
 	}
@@ -449,6 +460,17 @@ body {
 		color: white;
 	}
 
+#slide-7 {
+	background-color: #312450;
+	color: #e4e6e5;
+	padding-top: 90px;
+}
+
+#slide-7 i {
+		font-size: 80px;
+		color: white;
+	}
+
 
 #slide-5 {
 	background-color: #f39c12;
@@ -514,14 +536,6 @@ body {
 		display: none;
 		font-size: 20px;
 	}
-
-#slide-7 {
-	background-color: #e4e6e5;
-	color: #4e4e4e;
-	font-size: 35px;
-	line-height: 50px;
-	text-align: center;
-}
 
 #lightbox-out {
 	background-color: rgba( 0, 0, 0, 0.7 );
